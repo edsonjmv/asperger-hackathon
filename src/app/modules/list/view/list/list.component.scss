@@ -1,0 +1,25 @@
+:host {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+
+  @media only screen and (max-width: 600px) {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    width: 300px;
+    min-height: 100vh;
+    background-color: #eee;
+
+    @media only screen and (max-width: 600px) {
+      display: none;
+    }
+  }
+
+  .list {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}

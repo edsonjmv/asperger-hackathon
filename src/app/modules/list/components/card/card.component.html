@@ -1,0 +1,17 @@
+<mat-card class="example-card">
+  <mat-card-header>
+    <mat-card-title>{{ user?.name }}</mat-card-title>
+    <mat-card-subtitle>{{ user?.email }}</mat-card-subtitle>
+  </mat-card-header>
+  <div class="card-image" [ngStyle]="{'background-image': 'url(' + user.imageUrl + ')' }">
+
+  </div>
+  <mat-card-content>
+    <p>
+      {{ user?.direccion }}
+    </p>
+    <p>
+      {{ user?.telefono }}
+    </p>
+  </mat-card-content>
+</mat-card>
